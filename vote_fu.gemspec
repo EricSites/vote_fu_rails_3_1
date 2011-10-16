@@ -7,14 +7,12 @@ Gem::Specification.new do |s|
   s.homepage = "http://blog.peteonrails.com/vote-fu"
   s.description = "VoteFu provides the ability to have multiple voting entities on an arbitrary number of models in ActiveRecord."
   s.has_rdoc = false
-  s.authors = ["Peter Jackson", "Cosmin Radoi", "Bence Nagy", "Rob Maddox"]
+  s.authors = ["Peter Jackson", "Cosmin Radoi", "Bence Nagy", "Rob Maddox", "Achilleas Buisman"]
   s.files = [ "CHANGELOG.markdown",
               "MIT-LICENSE",
               "README.markdown",
-              "generators/vote_fu",
-              "generators/vote_fu/vote_fu_generator.rb",
-              "generators/vote_fu/templates",
-              "generators/vote_fu/templates/migration.rb",
+              "lib/generators/vote_fu_generator.rb",
+              "lib/generators/templates/migration.rb",
               "init.rb",
               "lib/vote_fu.rb",
               "lib/acts_as_voteable.rb",
