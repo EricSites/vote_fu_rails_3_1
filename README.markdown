@@ -1,9 +1,9 @@
-vote_fu_rails_3
+vote_fu_rails_3_1
 =======
 
 Allows an arbitrary number of entites (including Users) to vote on models.
 
-**(now Banana and Rails 3 compatible!)**
+**(now (Banana?) and Rails 3.1 compatible!)**
 
 **Now dance!**
 
@@ -31,11 +31,11 @@ Installation
 Use either the plugin or the gem installation method depending on your preference. If you're not sure, the plugin method is simpler. Whichever you choose, create the migration afterward and run it to create the required model.
 
 ### Via plugin
-    rails plugin install git://github.com/vshvedov/vote_fu_rails_3.git
+    rails plugin install git@github.com:abuisman/vote_fu_rails_3_1.git
 
 ### Create vote_fu migration
 Create a new rails migration using your new vote_fu generator (Note: "VoteableModel" is the name of the model on which you would like votes to be cast, e.g. Comment):
-    rails g vote_fu VoteableModel
+    rails generate vote_fu VoteableModel
 
 Run the migration:
     rake db:migrate
