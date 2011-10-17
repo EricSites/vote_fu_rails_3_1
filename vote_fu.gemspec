@@ -1,18 +1,16 @@
 Gem::Specification.new do |s|
   s.name = "vote_fu"
-  s.version = "0.0.11"
+  s.version = "0.0.12"
   s.date = "2011-10-09"
   s.summary = "Voting for ActiveRecord with multiple vote sources and advanced features."
-  s.email = "pete@peteonrails.com"
-  s.homepage = "http://blog.peteonrails.com/vote-fu"
+  # s.email = "pete@peteonrails.com"
+  # s.homepage = "http://blog.peteonrails.com/vote-fu"
   s.description = "VoteFu provides the ability to have multiple voting entities on an arbitrary number of models in ActiveRecord."
-  s.has_rdoc = false
+  # s.has_rdoc = false
   s.authors = ["Peter Jackson", "Cosmin Radoi", "Bence Nagy", "Rob Maddox", "Achilleas Buisman"]
   s.files = [ "CHANGELOG.markdown",
               "MIT-LICENSE",
               "README.markdown",
-              "lib/generators/vote_fu_generator.rb",
-              "lib/generators/templates/migration.rb",
               "init.rb",
               "lib/vote_fu.rb",
               "lib/acts_as_voteable.rb",
@@ -28,7 +26,8 @@ Gem::Specification.new do |s|
               "examples/voteable.html.erb",
               "examples/votes/_voteable_vote.html.erb",
               "examples/votes/create.rjs",
-              "examples/routes.rb", 
+              "examples/routes.rb",
               "rails/init.rb"
   ]
+  s.add_dependency("rails", ">= 3.1.0")
 end

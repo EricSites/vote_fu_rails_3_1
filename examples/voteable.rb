@@ -4,7 +4,7 @@ class Voteable < ActiveRecord::Base
   
   acts_as_voteable
   
-  scope :descending, :order => "created_at DESC"
+  named_scope :descending, :order => "created_at DESC"
 
   
 end
