@@ -56,7 +56,7 @@ module PeteOnRails
         
         def options_for_karma (object, options = {})
             #GuillaumeNM : 2009-01-30 Adding condition for SQLite3
-            conditions = ["u.id = ? AND vote = ?" , self[:id] , true]
+            conditions = ["u.id = ? AND vote = ?" , self[:id] , 1]
             joins = ["inner join votes v on #{object.table_name}.id = v.voteable_id", "inner join #{self.class.table_name} u on u.id = #{object.name.tableize}.#{self.class.name.foreign_key}"]
             { :joins => joins.join(" "), :conditions => conditions }.update(options)          
         end
