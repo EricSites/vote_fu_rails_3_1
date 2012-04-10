@@ -89,14 +89,14 @@ module Juixe
         def votes_for
           Vote.count(:all, :conditions => [
             "voteable_id = ? AND voteable_type = ? AND vote = ?",
-            id, self.class.name, true
+            id, self.class.name, 1
           ])
         end
 
         def votes_against
           Vote.count(:all, :conditions => [
             "voteable_id = ? AND voteable_type = ? AND vote = ?",
-            id, self.class.name, false
+            id, self.class.name, -1
           ])
         end
 
